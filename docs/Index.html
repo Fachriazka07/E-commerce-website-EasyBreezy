@@ -1,0 +1,334 @@
+---
+layout: default
+title: EasyBreezy Fashion Store
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Shopping</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--box icon link-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!--font awesome link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!--remix icon link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--google fontlink-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Jersey+25&family=Jost:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Easy<span>Breezy</span>.</a>
+
+      <ul class="navlist">
+        <li><a href="#Home" id="">Beranda</a></li>
+        <li><a href="#Category">Kategori</a></li>
+        <li><a href="#Shop">Produk</a></li>
+        <li><a href="#Contact">Kontak</a></li>
+      </ul>
+
+      <div class="cart-logo">
+        <i class="bx bx-cart"></i>
+      </div>
+      
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <section class="hero" id="Home">
+      <img
+        src="Hero Backgroun/background.jpg"
+        loading="lazy"
+        sizes="(max-width: 4574px) 100vw, 4574px"
+        alt=""
+        class="hero-img"
+      />
+
+      <div class="container">
+        <div class="heading-wrapper" data-aos="fade-up" data-aos-duration="1000">
+          <h1 class="heading" data-aos="fade-right" data-aos-delay="200">Tampil Keren Harga terjangkau</h1>
+          <div data-aos="fade-left" data-aos-delay="400">
+            <strong class="hero-subtitle"
+              >Temukan gaya Anda yang sempurna di sini. Dari gaya kasual hingga
+              yang elegan</strong
+            >
+          </div>
+          <a href="#Shop" class="button" data-aos="zoom-in" data-aos-delay="600">Beli Sekarang!</a>
+        </div>
+      </div>
+    </section>
+    <section class="caterogy-container" id="Category" >
+      <h2 data-aos="fade-up">Kategori Produk</h2>
+      <p data-aos="fade-up" data-aos-delay="200">Temukan Pilihan Anda!</p>
+      <div class="category-product" data-aos="fade-up" data-aos-delay="400">
+        <div class="category" data-aos="zoom-in" data-aos-delay="100">
+          <a href="C-baju.html">
+            <img src="baju/Baju kategori.png" alt="" />
+            <h4>Baju</h4>
+          </a>
+        </div>
+
+        <div class="category" data-aos="zoom-in" data-aos-delay="200">
+          <a href="C-celana.html">
+          <img src="celana/Celana kategori.png" alt="" />
+          <h4>Celana</h4>
+        </a>
+        </div>
+        <div class="category" data-aos="zoom-in" data-aos-delay="300">
+          <a href="C-Jaket.html">
+          <img src="Jaket/jaket kategori.png" alt="" />
+          
+          <h4>Jaket</h4>
+        </a>
+        </div>
+        <div class="category" data-aos="zoom-in" data-aos-delay="400">
+          <a href="C-Sepatu.html">
+          <img src="Sepatu/sepatu1.png" alt="" />
+          <h4>Sepatu</h4>
+        </a>
+        </div>
+        <div class="category" data-aos="zoom-in" data-aos-delay="500">
+          <a href="C-Topi.html">
+          <img
+            src="topi/Goorin Bros/Topi Goorin Bros Trucker Hat Original Produk .png"
+            alt=""
+          />
+          <h4>Topi</h4>
+        </a>
+        </div>
+      </div>
+    </section>
+      <section class="product-section" id="Shop">
+        <h2 data-aos="fade-up">Produk Terbaru</h2>
+        <div class="product-container" data-aos="fade-up" data-aos-delay="400">
+          <div class="product" data-aos="fade-up" data-aos-delay="100">
+            <a href="Detail-product1.html">
+              <div class="product-img-box">
+            <img src="baju/baju1.png" alt="">
+          </div>
+            <div class="product-desain">
+              <span>Kasual</span>
+              <h5>Shirt white</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>Rp.200.000</h4>
+            </div>
+            <a href="#"><i class="bx bx-cart cart"></i></i></a>
+          </a>
+          </div>
+          <div class="product" data-aos="fade-up" data-aos-delay="200">
+            <a href="Detail-product2.html">
+            <img src="celana/Celana3.png" alt="">
+            <div class="product-desain">
+              <span>Hsdeth</span>
+              <h5>Wholesale baggy khaki</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>Rp.250.000</h4>
+            </div>
+            <a href="#"><i class="bx bx-cart cart"></i></i></a>
+          </a>
+          </div>
+          <div class="product" data-aos="fade-up" data-aos-delay="300">
+            <a href="detail-product3.html"> 
+            <img src="Sepatu/sepatu1.png" alt="">
+            <div class="product-desain">
+              <span>Moorlands</span>
+              <h5>Men's Casual Office Work Shoes</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>Rp.159.000</h4>
+            </div>
+            <a href="#"><i class="bx bx-cart cart"></i></i></a>
+          </a>
+          </div>
+          <div class="product" data-aos="fade-up" data-aos-delay="400">
+            <a href="detail-product4.html">
+            <img src="Jaket/jaket1.png" alt="">
+            <div class="product-desain">
+              <span>Benny Brooks </span>
+              <h5>Full Sleeve Printed Hooded</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>Rp.150.000</h4>
+            </div>
+            <a href="#"><i class="bx bx-cart cart"></i></i></a>
+          </a>
+          </div>
+        </div>
+      </section>
+      <section class="contact-container" id="Contact">
+        <div class="contact-title">
+          <h2>Kontak</h2>
+        </div>
+        <div class="contact-box">
+          <!-- Form-->
+          <div class="contact form">
+            <h3>Kirim Pesan</h3>
+            <form>
+              <div class="formbox">
+                <div class="row50">
+                  <div class="inputbox">
+                    <span>Nama Depan</span>
+                    <input type="text" placeholder="Nama Depan">
+                  </div>
+                  <div class="inputbox">
+                    <span>Nama Belakang</span>
+                    <input type="text" placeholder="Nama Belakang">
+                  </div>
+                </div>
+                <div class="row50">
+                  <div class="inputbox">
+                    <span>Email</span>
+                    <input type="text" placeholder="fachriazka@gmailcom">
+                  </div>
+                  <div class="inputbox">
+                    <span>No Handphone</span>
+                    <input type="text" placeholder="082113833833">
+                  </div>
+                </div>
+                <div class="row100">
+                  <div class="inputbox">
+                    <span>Pesan</span>
+                    <textarea placeholder="Tulis pesan disini.."></textarea>
+                  </div>
+                </div>
+                <div class="row100">
+                  <div class="inputbox">
+                    <input type="submit" value="Kirim" href>
+                    
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- info-->
+          <div class="contact info">
+            <h3>Info Kontak</h3>
+            <div class="infobox">
+               <div>
+                <span><i class='bx bx-map'></i></span>
+                <p> Mayor Abdurakhman No. 209 <br> Sumedang,Jawa barat,Indonesia </p>
+               </div>
+               <div>
+                <span><i class='bx bx-envelope'></i></span>
+                <a href="mailto:smkn1smd@gmail.com">smkn1smd@gmail.com</a>
+               </div>
+               <div>
+                <span><i class='bx bx-phone' ></i></span>
+                <a href="tel:+628213833833 ">+62 821 1383 3833 </a>
+               </div>
+               <!--social media link-->
+               <ul class="sci">
+                <li><a href="https://www.instagram.com/osisnesas_/"><i class='bx bxl-instagram' ></i></a></li>
+                <li><a href="https://www.tiktok.com/@osisnesas_"><i class='bx bxl-tiktok'></i></a></li>
+                <li><a href="#"><i class='bx bxl-facebook' ></i></a></li>
+                <li><a href="https://www.youtube.com/@smkn1sumedang-official780/featured"><i class='bx bxl-youtube' ></i></a></li>
+                <li><a href="https://wa.me/6282113833833?text=Halo!"><i class='bx bxl-whatsapp' ></i></a></li>
+               </ul>
+            </div>
+          </div>
+          <!-- map-->
+          <div class="contact map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d788.5779353110406!2d107.9277794772836!3d-6.836339677976155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68d135076563e5%3A0x9a0dbf266571204c!2sKampus%20Belakang%20SMKN%201%20Sumedang!5e0!3m2!1sen!2sid!4v1715250843698!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-container">
+          <div class="social-icon">
+            <a href="https://www.instagram.com/osisnesas_/"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://www.tiktok.com/@osisnesas_"><i class='bx bxl-tiktok'></i></a>
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://www.youtube.com/@smkn1sumedang-official780/featured"><i class='bx bxl-youtube' ></i></a>
+            <a href="https://wa.me/6282113833833?text=Halo!"><i class='bx bxl-whatsapp' ></i></a>
+          </div>
+          <div class="footer-nav">
+            <ul>
+              <li><a href="#Home">Beranda</a></li>
+              <li><a href="#Shop">Produk</a></li>
+              <li><a href="#Contact">Kontak</a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>copyright &copy;2024;Web Made By <span >Fachri Azka</span></p>
+      </footer>
+      
+      <!-- AOS JavaScript -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 1000,
+          once: true,
+          offset: 100
+        });
+        
+        // Mobile Menu Toggle
+        function toggleMenu() {
+          const navlist = document.querySelector('.navlist');
+          navlist.classList.toggle('active');
+        }
+        
+        // Close menu when clicking on a link
+        document.querySelectorAll('.navlist a').forEach(link => {
+          link.addEventListener('click', () => {
+            document.querySelector('.navlist').classList.remove('active');
+          });
+        });
+      </script>
+    </body>
+</html>
